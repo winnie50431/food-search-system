@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/food-search-system/static/css/main.cfd1b932.css",
+    "main.js": "/food-search-system/static/js/main.02a5b98f.js",
+    "index.html": "/food-search-system/index.html",
+    "main.cfd1b932.css.map": "/food-search-system/static/css/main.cfd1b932.css.map",
+    "main.02a5b98f.js.map": "/food-search-system/static/js/main.02a5b98f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfd1b932.css",
+    "static/js/main.02a5b98f.js"
+  ]
+}
