@@ -85,6 +85,7 @@ header.header div.menu select.menu_select {
     border-radius: 0.25rem;
   }
   header.header div.menu select.menu_select {
+    background-color: #eeeeee;
     max-width: 300px;
   }
 }
