@@ -1,0 +1,245 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header.header {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.header h1 {
+  font-size: 1.75rem;
+  margin: 2rem 0;
+  color: #666666;
+}
+
+header.header div.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+header.header div.menu select.menu_select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  max-width: 380px;
+  height: 2.25rem;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0 0 0 0.75rem;
+}
+
+@media screen and (min-width: 576px) {
+  header.header {
+    max-width: 385px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header.header {
+    max-width: 960px;
+  }
+  header.header div.menu {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  header.header div.menu select.menu_select {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header.header {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header.header {
+    max-width: 100%;
+  }
+}
+
+main.cards {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  main.cards {
+    max-width: 385px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  main.cards {
+    max-width: 385px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main.cards {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main.cards {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main.cards {
+    max-width: 100%;
+  }
+}
+
+div.card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 370px;
+          flex: 0 1 370px;
+  height: 45vw;
+  max-height: 200px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.card img {
+  max-width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+div.card div.filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+div.card span {
+  padding: 3px 5px;
+  background-color: #dd8f00;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+div.card div.card_body {
+  padding: 0.75rem;
+  z-index: 10;
+  color: #dddddd;
+}
+
+div.card div.card_body em,
+div.card div.card_body p {
+  font-size: 0.875rem;
+}
+
+div.card div.card_body h3 {
+  font-size: 1rem;
+}
+
+div.card div.card_body hr,
+div.card div.card_body p.card_text {
+  display: none;
+}
+
+div.card:hover img {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+div.card:hover div.card_body h3,
+div.card:hover div.card_body p {
+  color: #ffffff;
+}
+
+div.card:hover div.card_body hr,
+div.card:hover div.card_body p.card_text {
+  display: block;
+}
+
+div.card:hover div.card_body hr {
+  border: none;
+  border-top: 3px solid #ffffff;
+  margin: 0.75rem 0;
+  width: 50px;
+}
+
+div.card:hover div.card_body p.card_text {
+  height: 2.25rem;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
