@@ -10,6 +10,7 @@ function App() {
   const [town, setTown] = useState(null);
   const [places, setPlaces] = useState([]);
   const [showPlaces, setShowPlaces] = useState([]);
+
   const url =
     "https://data.coa.gov.tw/Service/OpenData/ODwsv/ODwsvTravelFood.aspx";
 
@@ -72,7 +73,7 @@ function App() {
         setCity={setCity}
         setTown={setTown}
       />
-      <Cards places={showPlaces} />
+      <Cards places={places} showPlaces={showPlaces} />
     </div>
   );
 }
