@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/food-search-system/static/css/main.c6ba6dca.css",
-    "main.js": "/food-search-system/static/js/main.7f7a322d.js",
+    "main.css": "/food-search-system/static/css/main.a84518bd.css",
+    "main.js": "/food-search-system/static/js/main.3065494b.js",
+    "static/media/loading.gif": "/food-search-system/static/media/loading.1b3a2d2b80de047de8ac.gif",
     "index.html": "/food-search-system/index.html",
-    "main.c6ba6dca.css.map": "/food-search-system/static/css/main.c6ba6dca.css.map",
-    "main.7f7a322d.js.map": "/food-search-system/static/js/main.7f7a322d.js.map"
+    "main.a84518bd.css.map": "/food-search-system/static/css/main.a84518bd.css.map",
+    "main.3065494b.js.map": "/food-search-system/static/js/main.3065494b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6ba6dca.css",
-    "static/js/main.7f7a322d.js"
+    "static/css/main.a84518bd.css",
+    "static/js/main.3065494b.js"
   ]
 }
