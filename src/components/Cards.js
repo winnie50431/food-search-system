@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./Card";
 
-const Cards = ({ places, showPlaces }) => {
+const Cards = ({ places, filteredPlaces }) => {
   return (
     <main className="cards">
-      {showPlaces.length > 0
-        ? showPlaces.map((showPlace) => (
+      {filteredPlaces.length > 0
+        ? filteredPlaces.map((showPlace) => (
             <Card place={showPlace} key={showPlace.ID} />
           ))
         : places &&

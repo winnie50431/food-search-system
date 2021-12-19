@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
+import LoadingImage from "./components/LoadingImage";
 import "./styles/style.css";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   const [city, setCity] = useState(null);
   const [town, setTown] = useState(null);
   const [places, setPlaces] = useState([]);
-  const [showPlaces, setShowPlaces] = useState([]);
+  const [filteredPlaces, setFilterdPlaces] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const url =
     "https://data.coa.gov.tw/Service/OpenData/ODwsv/ODwsvTravelFood.aspx";
@@ -21,6 +23,7 @@ function App() {
       // console.log(data);
       setPlaces(data);
       getCities(data);
+      setIsLoading(false);
     } catch (err) {
       console.log(err);
     }
@@ -42,7 +45,7 @@ function App() {
   const getTowns = (city) => {
     // 1. get and show the places of current city
     const _places = places.filter((place) => place.City === city);
-    setShowPlaces(_places);
+    setFilterdPlaces(_places);
     // 2. get the towns of current city
     const _towns = _places.map((place) => place.Town);
     const result = _towns.filter(
@@ -53,6 +56,7 @@ function App() {
   };
 
   useEffect(() => {
+    setIsLoading(true);
     getData();
   }, []);
 
@@ -62,18 +66,19 @@ function App() {
 
   useEffect(() => {
     const _places = places.filter((place) => place.Town === town);
-    setShowPlaces(_places);
+    setFilterdPlaces(_places);
   }, [town]);
 
   return (
     <div className="App">
+      {isLoading ? <LoadingImage /> : null}
       <Header
         cities={cities}
         towns={towns}
         setCity={setCity}
         setTown={setTown}
       />
-      <Cards places={places} showPlaces={showPlaces} />
+      <Cards places={places} filteredPlaces={filteredPlaces} />/
     </div>
   );
 }
