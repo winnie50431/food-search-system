@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 h1,
@@ -23,6 +24,8 @@ $light_gray: #eeeeee;
 $primary: $orange;
 $light: $white;
 $bg_color: $light_gray;
+
+// styles
 
 body {
   background-color: $light_gray;

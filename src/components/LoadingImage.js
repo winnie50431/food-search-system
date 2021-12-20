@@ -5,7 +5,7 @@ const LoadingImage = () => {
   return (
     <div className="loadingImage">
       <img src={Loading} alt="" />
-      <p>資料下載中...請稍後</p>
+      <p>資料下載中...請稍後!</p>
     </div>
   );
 };
