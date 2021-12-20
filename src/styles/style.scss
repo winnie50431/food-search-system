@@ -14,6 +14,10 @@ h6 {
   font-weight: normal;
 }
 
+// a {
+//   text-decoration: none;
+// }
+
 // Variables
 $orange: #dd8f00;
 $white: #ffffff;
@@ -35,3 +39,4 @@ body {
 @import "_cards";
 @import "_card";
 @import "_loadingImage";
+@import "_footer";

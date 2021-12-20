@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 import LoadingImage from "./components/LoadingImage";
 import "./styles/style.css";
 
@@ -72,7 +73,8 @@ function App() {
         setCity={setCity}
         setTown={setTown}
       />
-      <Cards places={places} filteredPlaces={filteredPlaces} />/
+      <Cards places={places} filteredPlaces={filteredPlaces} />
+      <Footer />
     </div>
   );
 }

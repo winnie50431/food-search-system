@@ -92,8 +92,25 @@ main.cards {
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
-  gap: 1rem;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 576px) {
+  main.cards {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  main.cards {
+    gap: 1rem 3%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main.cards {
+    gap: 1rem 2%;
+  }
 }
 
 div.card {
@@ -236,5 +253,15 @@ div.loadingImage {
           justify-content: center;
   color: #ffffff;
   font-size: 1rem;
+}
+
+footer.footer {
+  text-align: center;
+  color: #666666;
+  margin: 1rem;
+}
+
+footer.footer a {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
