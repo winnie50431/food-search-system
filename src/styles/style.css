@@ -129,6 +129,8 @@ div.card {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-height: 200px;
+  min-height: 160px;
 }
 
 div.card img {
@@ -207,7 +209,6 @@ div.card:hover div.card_body p {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     height: 45vw;
-    max-height: 200px;
   }
 }
 
@@ -217,7 +218,6 @@ div.card:hover div.card_body p {
         -ms-flex: 0 1 48.5%;
             flex: 0 1 48.5%;
     height: 25vw;
-    max-height: 200px;
   }
 }
 
@@ -227,7 +227,6 @@ div.card:hover div.card_body p {
         -ms-flex: 0 1 32%;
             flex: 0 1 32%;
     height: 15vw;
-    max-height: 200px;
   }
 }
 
