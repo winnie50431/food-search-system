@@ -159,6 +159,10 @@ div.card div.card_body {
   padding: 0.75rem;
   z-index: 10;
   color: #dddddd;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: translate(0, 4.25rem);
+          transform: translate(0, 4.25rem);
 }
 
 div.card div.card_body em,
@@ -170,9 +174,16 @@ div.card div.card_body h3 {
   font-size: 1rem;
 }
 
-div.card div.card_body hr,
+div.card div.card_body hr {
+  border: none;
+  border-top: 3px solid #ffffff;
+  margin: 0.75rem 0;
+  width: 50px;
+}
+
 div.card div.card_body p.card_text {
-  display: none;
+  height: 2.5rem;
+  overflow: hidden;
 }
 
 div.card:hover img {
@@ -182,26 +193,14 @@ div.card:hover img {
           transform: scale(1.05);
 }
 
+div.card:hover div.card_body {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 div.card:hover div.card_body h3,
 div.card:hover div.card_body p {
   color: #ffffff;
-}
-
-div.card:hover div.card_body hr,
-div.card:hover div.card_body p.card_text {
-  display: block;
-}
-
-div.card:hover div.card_body hr {
-  border: none;
-  border-top: 3px solid #ffffff;
-  margin: 0.75rem 0;
-  width: 50px;
-}
-
-div.card:hover div.card_body p.card_text {
-  height: 2.25rem;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 576px) {
